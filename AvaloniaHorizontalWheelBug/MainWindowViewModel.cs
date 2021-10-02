@@ -7,8 +7,6 @@ namespace AvaloniaHorizontalWheelBug
     {
         public ObservableCollection<Entry> Entries { get; set; }
 
-        private Random _random = new Random();
-
         public MainWindowViewModel()
         {
             Entries = new ObservableCollection<Entry>();
@@ -18,10 +16,10 @@ namespace AvaloniaHorizontalWheelBug
                 Entries.Add(new Entry()
                 {
                     Expiry = new DateTime(),
-                    Id = (_random.Next() * 10000).ToString(),
-                    Status = (_random.Next() * 10000).ToString(),
-                    Symbol = (_random.NextDouble() * 1000000.0).ToString(),
-                    Type = (_random.Next() * 10000).ToString(),
+                    Id = $"Id {i}",
+                    Status = $"Status {i}",
+                    Symbol = $"Symbol {i}",
+                    Type = $"Type {i}"
                 });
             }
         }

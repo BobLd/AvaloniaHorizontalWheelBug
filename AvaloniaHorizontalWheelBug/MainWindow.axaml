@@ -5,7 +5,7 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaHorizontalWheelBug.MainWindow"
         Title="AvaloniaHorizontalWheelBug"
-		Width="200" CanResize="False">
+		Width="200" Height="200" CanResize="False">
 	<DataGrid Items="{Binding Entries}">
 		<DataGrid.Columns>
 			<DataGridTextColumn Header="ID" Binding="{Binding Id, Mode=OneWay}" />
